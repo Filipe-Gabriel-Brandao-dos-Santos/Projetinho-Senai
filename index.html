@@ -471,7 +471,59 @@
       font-size: 32px;
       color: #084475;
       font-weight: 800;
-    }
+    } 
+    @media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .departments {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .dept-card {
+    height: 200px;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: -1;
+  }
+
+  .simple-page h2 {
+    font-size: 28px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+}
   </style>
 </head>
 <body>
