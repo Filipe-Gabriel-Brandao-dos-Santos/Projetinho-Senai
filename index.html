@@ -474,6 +474,50 @@
     } 
      @media (max-width: 768px) {
 
+/* 🔥 GARANTE QUE NADA PASSE DA TELA */
+* {
+  max-width: 100%;
+}
+
+/* 🔥 REMOVE QUALQUER LARGURA QUE ESTOURA */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 🔥 HERO 100% CORRETO */
+.hero {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 🔥 CONTEÚDO INTERNO DO HERO */
+.hero > div {
+  max-width: 100%;
+}
+
+/* 🔥 REMOVE QUALQUER PADDING ANTIGO GRANDE */
+section, .hero, header {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+/* 🔥 GARANTE QUE IMAGENS NÃO QUEBREM */
+.dept-card {
+  width: 100%;
+}
+
+/* 🔥 CORRIGE FOOTER BUGANDO */
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* 🔥 EVITA ELEMENTOS FLUTUANDO BUGADOS */
+.page {
+  overflow-x: hidden;
+}
   header {
     padding: 15px 20px;
     flex-direction: column;
